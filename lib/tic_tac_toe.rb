@@ -22,11 +22,11 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
-  def input_to_index
-    user_input = gets.strip
-    user_input.to_i - 1
-    puts @board
-  end
+  #def input_to_index
+  #  user_input = gets.strip
+  #  user_input.to_i - 1
+  #  puts @board
+  #end
 
   #def current_player
   #  turn_count % 2 == 0 ? "X" : "O"
