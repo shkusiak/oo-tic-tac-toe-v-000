@@ -31,7 +31,7 @@ class TicTacToe
     @index = index
     @token = token
   end
-  
+
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
