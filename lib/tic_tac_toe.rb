@@ -76,6 +76,10 @@ class TicTacToe
     @board.all?{|token| token == "X" || token == "O"}
   end
 
+  def draw?
+    full? && !won?
+  end
+
   def over?
     won? || full?
   end
@@ -87,5 +91,13 @@ class TicTacToe
   end
 
   def play
+    while !over?
+      turn
+    end
+    if draw?
+      puts "Cat's Game!"
+    else
+      puts "Congratulations #{winner(@board)}!"
+    end
   end
 end
