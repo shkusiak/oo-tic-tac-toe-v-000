@@ -48,9 +48,9 @@ class TicTacToe
     puts "Please enter 1-9:"
     @user_input = gets.strip
     @index = input_to_index(user_input)
-    
+
   end
-  
+
   def current_player
     turn_count % 2 == 0 ? "X" : "O"
   end
@@ -59,4 +59,3 @@ class TicTacToe
     @board.count{|token| token == "X" || token == "O"}
   end
 end
-
