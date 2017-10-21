@@ -85,15 +85,15 @@ class TicTacToe
   end
 
   def winner
-    if winning_combo = won?
-      @board[winning_combo.first]
-    end
+  #  if winning_combo = won?
+  #    @board[winning_combo.first]
+  #  end
   end
 
   def play
-    while !over?
-      turn
-    end
+  #  while !over?
+  #    turn
+  #  end
     if draw?
       puts "Cat's Game!"
     else
