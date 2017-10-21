@@ -31,7 +31,6 @@ class TicTacToe
     @index = index
     @token = token
     @board[index] = token
-    
   end
 
   def current_player
